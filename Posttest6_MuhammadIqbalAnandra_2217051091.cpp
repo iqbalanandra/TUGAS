@@ -3,10 +3,14 @@ using namespace std;
 
 int main()
 {
-	int arr[5];
+	int n;
+	cout << "Ada berapa data ? :";
+	cin >> n;
+	int arr[n];
+	
 	bool tukar;
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << "Data Ke-" << i + 1 << " : ";
 		cin >> arr[i];
@@ -14,12 +18,12 @@ int main()
 
 	int k;
 	cout << "Data Sebelum Diurutkan : ";
-	for (k = 0; k < 5; k++)
+	for (k = 0; k < n; k++)
 	{
 		cout << arr[k] << " ";
 	}
 	int temp;
-	int BilanganTerakhir = 4;
+	int BilanganTerakhir = n-1;
 
 	do
 	{
@@ -40,7 +44,7 @@ int main()
 	} while (tukar);
 	cout << endl
 		 << "Data Sesudah diurutkan : ";
-	for (int j = 0; j < 5; j++)
+	for (int j = 0; j < n; j++)
 	{
 		cout << arr[j] << " ";
 	}
